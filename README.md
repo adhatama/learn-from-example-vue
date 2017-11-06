@@ -18,3 +18,7 @@ I hope you can learn from this too.
 - Vue Router
 - Component Interactions
 - Integration with CSS Framework
+- Deployment
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
