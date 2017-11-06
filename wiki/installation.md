@@ -1,0 +1,20 @@
+## Installation
+- Install project template using vue-cli
+    - vue-cli is only used to get the vue webpack template
+    - [Vue has many templates](https://github.com/vuejs-templates) for us to getting started quickly. In this tutorial, we will use webpack templates which is template ready for production.
+    - Step to install:
+        - `npm install -g vue-cli`
+        - `vue init webpack vue-learn-by-example`
+            - Vue build > Runtime + Compiler
+            - Install vue-router > Yes
+            - Use ESLint to lint your code > Yes
+            - Pick an ESLint preset > Standard
+            - Setup unit tests with Karma + Mocha > Yes
+            - Setup e2e tests with Nighwatch > Yes
+        - `cd vue-learn-by-example`
+        - `npm install`
+        - `npm run dev`
+    - You won't need to understand everything in webpack configuration. Just use `npm run dev` to run the project and `npm run build` to create compiled files used in production
+    - References:
+      - https://github.com/vuejs/vue-cli
+      - https://github.com/vuejs-templates/webpack
