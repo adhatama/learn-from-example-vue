@@ -1,4 +1,4 @@
-# Learn by Example: Vue
+# Learn from Example: Vue
 
 This tutorial is aimed to understand the minimum knowledge to quickly to be productive in a Vue project.  
 In my opinion, for beginner, they will better understand a new knowledge when there is a concrete example.  
