@@ -1,24 +1,21 @@
 <template>
-  <b-navbar toggleable="md" type="dark" variant="info">
-    <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-    
-    <b-navbar-brand href="#">Vue - Learn from Example</b-navbar-brand>
-    
-    <b-collapse is-nav id="nav_collapse">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#" @click="redirect('home')"><strong>Vue</strong> Learn From Example</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <b-navbar-nav>
-          <b-nav-item href="#" @click="redirect('home-index')">Home</b-nav-item>
-      </b-navbar-nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-          <!-- @click is syntatical sugar of v-on:click -->
-          <!-- call method with router name in parameter to change page -->
-          <b-nav-item href="#" @click="redirect('login')">Login</b-nav-item>
-      </b-navbar-nav>
-
-    </b-collapse>
-  </b-navbar>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <!-- Use `prevent` on the `@click` to prevent the default link to work.
+          If it doesn't use `prevent`, the url won't change to `/login` as expected -->
+          <a class="nav-link" href="#" @click.prevent="redirect('login')">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -29,3 +26,8 @@ export default {
 }
 </script>
 
+<style scoped>
+nav.navbar {
+  background-color: #e3f2fd;
+}
+</style>
