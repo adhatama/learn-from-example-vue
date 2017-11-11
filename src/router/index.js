@@ -5,6 +5,7 @@ import Home from '@/components/home/Home'
 import HomeIndex from '@/components/home/Index'
 import Login from '@/components/home/Login'
 import Admin from '@/components/admin/Admin'
+import AdminIndex from '@/components/admin/Index'
 import PostIndex from '@/components/admin/posts/Index'
 
 Vue.use(Router)
@@ -30,10 +31,16 @@ export default new Router({
     },
     {
       path: '/admin',
-      name: 'admin-home',
+      name: 'admin',
       component: Admin,
       meta: { auth: true },
       children: [
+        {
+          path: '/',
+          name: 'admin-index',
+          component: AdminIndex,
+          meta: { auth: true }
+        },
         {
           path: '/post',
           name: 'post-index',
