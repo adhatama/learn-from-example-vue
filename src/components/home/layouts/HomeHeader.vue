@@ -22,12 +22,10 @@
 </template>
 
 <script>
+import helper from '@/mixins/helper'
+
 export default {
-  methods: {
-    redirect: function (routerName) {
-      this.$router.push({ name: routerName })
-    }
-  }
+  mixins: [helper]
 }
 </script>
 
