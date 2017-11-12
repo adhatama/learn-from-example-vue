@@ -13,8 +13,9 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
+      // If we have default route child for this route,
+      // then we should remove parent `name` and just use default route child instead
       path: '/',
-      name: 'home',
       component: Home,
       children: [
         {
@@ -31,7 +32,6 @@ export default new Router({
     },
     {
       path: '/admin',
-      name: 'admin',
       component: Admin,
       meta: { auth: true },
       children: [
