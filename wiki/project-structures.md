@@ -26,6 +26,10 @@
 - test
 - index.html
 
+----
+
+#### Explanation
+
 - build
     - This folder contains Webpack-related configuration. You won't need to touch it for now.
 - config
