@@ -16,7 +16,7 @@ Disclaimer: I'm still starting to learn Vue too.
 
 ## Table of Content
 - [Installation](wiki/installation.md)
-- Project Structures
+- [Project Structures](wiki/project-structures.md)
 - Vue Router
 - Component Interactions
 - Integration with CSS Framework - Bootstrap 4

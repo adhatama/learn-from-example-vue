@@ -1,1 +1,41 @@
 ## Project Structures
+
+- build
+- config
+- src
+    - assets
+    - components
+        - admin
+            - layouts
+                - AdminHeader.vue
+                - AdminMain.vue
+                - AdminSidebar.vue
+            - Admin.vue
+        - home
+            - layouts
+                - HomeHeader.vue
+                - HomeMain.vue
+            - Home.vue
+    - mixins
+    - resources
+    - router
+    - styles
+    - App.vue
+    - main.js
+- static
+- test
+- index.html
+
+- build
+    - This folder contains Webpack-related configuration. You won't need to touch it for now.
+- config
+    - Something like dot env (.env) to place your spesific constant variable based on your environment. If you want to set API_HOST or some Secret key, set it in here
+- src
+    - Your main business logic apps
+    - Everything in here will be compiled by Webpack into one js file
+- static
+    - This contains files like assets, but it won't be compiled by Webpack
+- test
+    - For automated test
+- index.html
+    - Entry point of your Vue apps
