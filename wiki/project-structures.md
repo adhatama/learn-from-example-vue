@@ -36,7 +36,7 @@
     - Something like dot env (.env) to place your spesific constant variable based on your environment. If you want to set API_HOST or some Secret key, set it in here
 - src
     - Your main business logic apps
-    - Everything in here will be compiled by Webpack into one js file. Only js file will be compiled. For css, it will be outputed in html directly without files
+    - Everything in here will be compiled by Webpack into one js file. Only js file will be compiled. For css, it will be outputed in html directly without files (you can inspect element on the running vue apps)
     - `main.js` 
         - is the entry point where you define your Vue Instance. This is where you import custom vue library and node modules. 
         - Vue Instance will load its main Component which is `App.vue`. 
@@ -51,6 +51,8 @@
         - `HomeHeader` is just normal vue file
         - `HomeMain` contains `<router-view/>` again.
             - If you see the `router/index.js`, the `/` url have route children. So actually the route children is the route that will be used. The route children has route with `/` url again. It shows the default children route, so when the browser access `/`, it will show the route children too. So the `<router-view/>` in the `HomeMain` will be filled with the router children Component, which is `HomeIndex`.
+    - `components/admin/Admin.vue`
+        - The concept is like the `Home` Components
     - For more information, please read the comments in the code.
 - static
     - This contains files like assets, but it won't be compiled by Webpack
