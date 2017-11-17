@@ -1,4 +1,5 @@
 <template>
+  <!-- id="app" is named from id="app" in index.html -->
   <div id="app">
     <router-view/>
   </div>
